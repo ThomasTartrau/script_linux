@@ -23,7 +23,7 @@ else
     echo "Une erreur s'est produite lors de l'installation de MariaDB Server."
 fi
 
- Exécuter mysql_secure_installation pour sécuriser l'installation de MariaDB
+# Exécuter mysql_secure_installation pour sécuriser l'installation de MariaDB
 echo "Exécution de mysql_secure_installation..."
 
 mysql_secure_installation <<EOF
@@ -50,4 +50,4 @@ systemctl restart mariadb
 echo "Configuration de MariaDB terminée."
 
 # Fin du programme
-exit 1
+exit 0
